@@ -66,6 +66,11 @@
     "@algolia/requester-common" "4.8.1"
     "@algolia/transporter" "4.8.1"
 
+"@algolia/events@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@algolia/events/-/events-4.0.1.tgz#fd39e7477e7bc703d7f893b556f676c032af3950"
+  integrity sha512-FQzvOCgoFXAbf5Y6mYozw2aj5KCJoA3m4heImceldzPSMbdyS4atVjJzXKMsfX3wnZTFYwkkt8/z8UesLHlSBQ==
+
 "@algolia/logger-common@4.8.1":
   version "4.8.1"
   resolved "https://registry.yarnpkg.com/@algolia/logger-common/-/logger-common-4.8.1.tgz#46accd128bc5179385c437085a02e0d9c5e721ae"
@@ -2173,12 +2178,12 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-algoliasearch-helper@^3.1.0:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/algoliasearch-helper/-/algoliasearch-helper-3.3.2.tgz#7ba2b233fb8ce216f35a55a21fa0faadeca3f21a"
-  integrity sha512-7NCTXL256Bnh0aVBP/FNba9orkpCJVjj98lYyrvFe0hs8lvrP8sVowznqntjeF5BNYqSgI5pEmTaq3iwXSK9jg==
+algoliasearch-helper@3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/algoliasearch-helper/-/algoliasearch-helper-3.14.0.tgz#2409c2591952719ab6fba1de77b3bbe5094ab85e"
+  integrity sha512-gXDXzsSS0YANn5dHr71CUXOo84cN4azhHKUbg71vAWnH+1JBiR4jf7to3t3JHXknXkbV0F7f055vUSBKrltHLQ==
   dependencies:
-    events "^1.1.1"
+    "@algolia/events" "^4.0.1"
 
 algoliasearch@^3.24.5:
   version "3.35.1"
@@ -5295,7 +5300,7 @@ eventemitter3@^4.0.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
-events@^1.1.0, events@^1.1.1:
+events@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
   integrity sha1-nr23Y1rQmccNzEwqH1AEKI6L2SQ=
@@ -10442,7 +10447,7 @@ prompts@^2.3.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10780,27 +10785,27 @@ react-input-autosize@^2.2.2:
   dependencies:
     prop-types "^15.5.8"
 
-react-instantsearch-core@^6.8.2:
-  version "6.8.2"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.8.2.tgz#61046c9c5ccdc94cfe84893f7fcab89614c50d54"
-  integrity sha512-UdAjcNIXb2mSECEDS/2XuB4W6rcbnph1NjJBUpY5TLLzSCdKXNTzS2PxF5hkdeuY0L/m/hvDQX6YqxV28PqKLA==
+react-instantsearch-core@6.40.4:
+  version "6.40.4"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.40.4.tgz#74feaa94436a20df91febe64b7d8ef0f7b3e657a"
+  integrity sha512-sEOgRU2MKL8edO85sNHvKlZ5yq9OFw++CDsEqYpHJvbWLE/2J2N49XAUY90kior09I2kBkbgowBbov+Py1AubQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
-    algoliasearch-helper "^3.1.0"
-    prop-types "^15.5.10"
+    algoliasearch-helper "3.14.0"
+    prop-types "^15.6.2"
     react-fast-compare "^3.0.0"
 
-react-instantsearch-dom@^6.5.0:
-  version "6.8.2"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.8.2.tgz#4d50ad62c662c5d0ada4a34c15de06994bb68814"
-  integrity sha512-d6YBsjW/aF3qzul7qqUV/KuzEFPVxlAZm3QhREPqMvOyrPTnG5itZZBLe7sFm9OKJ/8shR4TyNp3hb94as7COg==
+react-instantsearch-dom@^6.40.4:
+  version "6.40.4"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.40.4.tgz#9e56bb66626a66da523bd343e2cb5cd6362efbe4"
+  integrity sha512-Oy8EKEOg/dfTE8tHc7GZRlzUdbZY4Mxas1x2OtvSNui+YAbIWafIf1g98iOGyVTB2qI5WH91YyUJTLPNfLrs6Q==
   dependencies:
     "@babel/runtime" "^7.1.2"
-    algoliasearch-helper "^3.1.0"
+    algoliasearch-helper "3.14.0"
     classnames "^2.2.5"
-    prop-types "^15.5.10"
+    prop-types "^15.6.2"
     react-fast-compare "^3.0.0"
-    react-instantsearch-core "^6.8.2"
+    react-instantsearch-core "6.40.4"
 
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
