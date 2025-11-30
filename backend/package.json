@@ -9,8 +9,8 @@
   "main": "build/functions/index.js",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/firestore": "^3.8.2",
-    "@google-cloud/pubsub": "^2.0.0",
+    "@google-cloud/firestore": "^7.0.0",
+    "@google-cloud/pubsub": "^4.0.0",
     "@types/uuid": "^8.0.0",
     "uuid": "^8.1.0"
   },
